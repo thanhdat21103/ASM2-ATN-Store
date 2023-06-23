@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;}
+    span{font-size: 20px;}
+    .brand-link{padding: 13px 8px}
+    .os-content{padding:0 8px}
+    
+.w3-bar-block .w3-bar-item {padding:20px}
+
+</style>
+</head>
+<body>
+
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-green w3-xlarge" style="max-width:1700px;">
+    <div class="w3-center w3-padding-16" >WELCOME TO ATN STORE</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" >
+    {{#each Toys}}
+    <div class="w3-quarter">
+      <img src="{{toys_image}}"  style="width:150px;height:200px">
+      <h3 style="font-weight: bold;">{{toys_name}}</h3>
+      <p>{{toys_price}}$ - {{toys_year}} </p>
+      <h4c>{{toys_gender}}</p>
+    </div>
+    
+{{/each}}
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>More About Me</h3><br>
+    <img src="https://media.istockphoto.com/id/1327513606/vector/robot-cars-pyramid-helicopter-rocket-blocks-in-boy-toy-store-window-colourful-storefront.jpg?s=612x612&w=0&k=20&c=IzxRqyo0S7oBSNT3vOfZrmNoFqs04CXOFSGth1H1UJs=" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>Who I Am!</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>ATN Store is an amazing toy store for both kids and adults. With a creative space and a diverse range of products, we bring joy and memorable experiences to all our customers. At ATN Store, you will discover a variety of captivating toys, from adorable dolls to educational games. We are committed to providing high-quality, safe, and unique products that help children develop skills and explore the world in a fun way. Visit JellyBean and explore the wonderful world of toys!</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Aboud us</h3>
+      <p>ATN Store is an amazing toy store for both kids and adults. Visit ATN Store and explore the wonderful world of toys!</p>
+      <p>Powered by Dat</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Contact</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Phone</span><br>
+          <span>0394367899</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Email</span><br>
+          <span>datvtgch210389@fpt.edu.vn</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">candy</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Car</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hanoi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Lego</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sai gon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Doll</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Slide</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
